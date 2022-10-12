@@ -37,4 +37,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=OnePlus9R_IND \
     PRIVATE_BUILD_DESC="OnePlus9R-user 11   release-keys"
 
-BUILD_FINGERPRINT := OnePlus/OnePlus9R:11/RKQ1.201112.002/2107230010:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys
