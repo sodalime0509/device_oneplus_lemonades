@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2022 RiceDroid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonades device
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common riceDroid Stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_lemonades
@@ -38,3 +39,33 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="OnePlus9R-user 11   release-keys"
 
 BUILD_FINGERPRINT := OnePlus/OnePlus9R:11/RKQ1.201112.002/2107230010:user/release-keys
+
+# riceDroid Flags
+
+# Enable Google Recorder Functionality
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Spoof build description/fingerprint as pixel device
+TARGET_USE_PIXEL_FINGERPRINT := true
+
+# Aperture Camera (default: not defined - skipped by the compiler)
+TARGET_BUILD_APERTURE_CAMERA := true
+
+# UDFPS ICONS/ANIMATIONS
+TARGET_HAS_UDFPS := true
+
+# Enable Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Enable Quick Tap Funtionality
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# Enable Blur
+TARGET_ENABLE_BLUR := true
+
+# Set the correct chipset target to be shown in info
+RICE_CHIPSET := SD870
+
+# Maintainer Stuff
+RICE_MAINTAINER := Lord Itachi
+RICE_OFFICIAL := true
