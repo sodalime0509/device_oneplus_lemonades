@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stag_lemonades.mk
+    $(LOCAL_DIR)/banana_lemonades.mk
 
 COMMON_LUNCH_CHOICES := \
-    stag_lemonades-user \
-    stag_lemonades-userdebug \
-    stag_lemonades-eng
+    banana_lemonades-user \
+    banana_lemonades-userdebug \
+    banana_lemonades-eng
