@@ -12,13 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
 # Inherit some common Ricedroid stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
-PRODUCT_NAME := derp_lemonades
+PRODUCT_NAME := banana_lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := LE2101
+BANANA_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_SYSTEM_NAME := OnePlus9R
 PRODUCT_SYSTEM_DEVICE := OnePlus9R
@@ -38,4 +39,6 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 2160
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
 
