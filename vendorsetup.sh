@@ -16,7 +16,7 @@ git clone --depth=1 https://github.com/manidweep/vendor_oneplus_sm8250-common.gi
 echo 'Cloning Kernel tree [4/6]'
 # Kernel Tree
 rm -rf kernel/oneplus
-git clone --depth=1 https://github.com/HELLBOY017/kernel_oneplus_sm8250 kernel/oneplus/sm8250
+git clone --depth=1 https://github.com/HELLBOY017/kernel_oneplus_sm8250 -b oos kernel/oneplus/sm8250
 
 echo 'Cloning Hardware Oplus [5/6]'
 # Hardware Oplus
