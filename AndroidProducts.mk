@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lemonades.mk
+    $(LOCAL_DIR)/bootleg_lemonades.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_lemonades-user \
-    aosp_lemonades-userdebug \
-    aosp_lemonades-eng
+    bootleg_lemonades-user \
+    bootleg_lemonades-userdebug \
+    bootleg_lemonades-eng
