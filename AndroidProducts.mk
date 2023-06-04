@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_lemonades.mk
+    $(LOCAL_DIR)/blaze_lemonades.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootleg_lemonades-user \
-    bootleg_lemonades-userdebug \
-    bootleg_lemonades-eng
+    blaze_lemonades-user \
+    blaze_lemonades-userdebug \
+    blaze_lemonades-eng
